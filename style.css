@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'DM Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: "Roboto Slab", serif; */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: "Roboto Slab", serif;
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: "Roboto", sans-serif;
+}
+
+.course {
+    margin-bottom: 3.7rem;
+}
+
+.course #title {
+    /* width: 211.396px;
+    height: 53.863px; */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.course .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course .content {
+    width: 60%;
+}
+
+.content .info {
+    /* width: 23.963rem; */
+}
+
+.course .content .info p {
+    font-size: 17px;
+}
+
+.course .image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.course .image img:first-child {
+    width: 12.8036rem;
+    height: 12.8399rem;
+    object-fit: cover;
+}
+
+.course .additional-info-wrapper {
+    display: flex;
+    width: 80%;
+    margin-top: 3.125rem;
+    align-items: center;
+}
+
+.course .additional-info-wrapper .lessons {
+    display: flex;
+    width: 60%;
+}
+
+.course .add-image {
+    width: 40%;
+    position: relative;
+}
+
+.course .add-image svg {
+    position: absolute;
+    bottom: -0.9375rem;
+    left: 0.625rem;
+    z-index: -1;
+}
+
+.course .add-image img {
+    width: 11.875rem;
+    height: 11.9375rem;
+}
+
+.course .hour {
+    font-size: 1.0625rem;
+    padding: 0.3125rem 0;
+    font-weight: 700;
+}
+
+.course .lesson-content {
+    font-size: 0.875rem;
+}
+
+.course .lesson {
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .course .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .course #title {
+        font-size: 1.625rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .course .content {
+        width: 100%;
+    }
+
+    .course .image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .course .image img:first-child {
+        width: 9.1447rem;
+        height: 9.1738rem;
+    }
+
+    .course .additional-info-wrapper {
+        flex-direction: column;
+    }
+
+    .course .add-image {
+        display: none;
+    }
+
+    .course .content .info p {
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    .course .additional-info-wrapper .lessons {
+        width: 100%;
+        gap: 2.1875rem;
+        flex-wrap: wrap;
+        padding: 1.25rem 0;
+    }
+
+    .course .lesson {
+        flex: unset;
+        max-width: 40%;
+    }
+
+    .course #title {
+        margin-bottom: 1.25rem;
+    }
+
+    .course .hour {
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+
+    .course .lesson-content {
+        font-size: 0.625rem;
+        line-height: 0.9375rem;
+        margin-top: 0.25rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 834px) {
+    .course .add-image {
+        display: none;
+    }
+
+    .course #title {
+        font-size: 2.5rem;
+        margin-bottom: 27px;
+        font-weight: 700;
+    }
+
+    .course .additional-info-wrapper .lessons {
+        width: 100%;
+        gap: 1.25rem;
+    }
+
+    .course .lesson {
+        flex: unset;
+        max-width: 25%;
+    }
+
+    .course .lesson-content {
+        font-size: 0.75rem;
+    }
+}
